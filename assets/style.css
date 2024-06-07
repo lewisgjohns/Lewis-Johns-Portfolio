@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: white;
+    color: silver;
+    font-family: adabi;
+    text-align: center;
+    padding: 20px 0 2px 0;
+}
+
+header:hover{
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+  
+   
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: adabi;
+    font-size: 14px;
+}
+
+li {
+    display:inline-block;
+    margin: 10px; ;
+}
+
+h2 {
+    color: silver;
+}
+
+ul li a {
+    text-decoration: none;
+    color: silver;
+   
+    display: inline-block;
+}
+
+nav a:hover {
+    color: black;
+
+}
+
+img{
+    width:100%;
+    height: 320px;
+    display: block;
+    margin-top: 40px;
+}
+
+.img:hover {
+    box-shadow: 0px 5px 10px black;
+}
+
+.about {
+    margin-top: 125px;
+    margin-bottom: 125px;
+    text-align: center;
+
+}
+
+.work {
+    margin-top: 125px;
+    margin-bottom: 125px;
+    text-align: center;
+}
+
+.ocean {
+    width:100%;
+    height: 300px;
+    display: block;
+  
+}
+
+.ocean:hover {
+    box-shadow: 0px 5px 10px black;
+}
+
+.building {
+    width:100%;
+    height: 350px;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.concrete {
+    width:100%;
+    height: 300px;
+    display: block;
+  
+}
+
+footer{
+    color: silver;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+footer:hover{
+    color: black;
+    
+}
