@@ -2,123 +2,159 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --light: white;
 }
 
 
 header {
-    background-color: white;
-    color: silver;
-    font-family: adabi;
-    text-align: center;
-    padding: 20px 0 2px 0;
+    color: black;
+    text-align: left;
+    margin-left: 70px;
+    background-color: var(--light);  
+    padding-top: 100px;
+    font-family: garamond;
 }
 
 header:hover{
-    color: black;
+    color: silver;
 }
 
 body {
-    background-color: white;
+    background-color: var(--light);
+    overflow-x: hidden;
 }
 
 nav {
-    text-align: center;
-    padding: 10px 0;
-  
-   
-}
-
-nav ul {
-    list-style: none;
-    
-}
-
-header nav li {
+    text-align: left;
+    margin-left: 60px;
+    background-color: var(--light);
     display: inline-block;
-    margin: 0 10px;
-    font-family: adabi;
-    font-size: 14px;
+    list-style: none;
+    width: 100%;
+}
+
+nav a:hover {
+    color: black;
 }
 
 li {
     display:inline-block;
     margin: 10px; ;
-}
-
-h2 {
-    color: silver;
+    background-color: var(--dark);
+    font-family: garamond;
 }
 
 ul li a {
     text-decoration: none;
     color: silver;
-   
     display: inline-block;
 }
 
-nav a:hover {
+h2 {
     color: black;
-
+    font-family: garamond;
+    margin-bottom: 15px;
 }
 
-img{
-    width:100%;
-    height: 320px;
+h2:hover{
+    color: silver;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.harbour,
+.brutalism {
+    flex: 1;
     display: block;
-    margin-top: 40px;
+    padding: 50px; 
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 100px;/* Optional: Add padding between images */
 }
 
-.img:hover {
-    box-shadow: 0px 5px 10px black;
+.harbour img,
+.brutalism img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto;
+    
 }
 
-.about {
-    margin-top: 125px;
-    margin-bottom: 125px;
-    text-align: center;
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change flex direction to column for stacking */
+    }
 
+    .harbour,
+    .brutalism {
+        flex: none; /* Remove flex to make them stack */
+        width: 100%; /* Ensure each image takes full width */
+    }
 }
 
-.work {
-    margin-top: 125px;
-    margin-bottom: 125px;
-    text-align: center;
-}
 
-.ocean {
-    width:100%;
-    height: 300px;
-    display: block;
+.about, .work {
   
+    color: grey;
+    text-align: left;
+    background-color: var(--dark);
+    padding: 50px;
+    margin-left: 50px;
+    
+    
+
 }
 
-.ocean:hover {
-    box-shadow: 0px 5px 10px black;
+
+.concrete img,
+.building img,
+.bondi img{
+
+    width: 100%; 
+    height: auto;
+    display: inline-block;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
 }
 
-.building {
-    width:100%;
-    height: 350px;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 0;
+.bondi{
+    padding: 50px;
 }
 
-.concrete {
-    width:100%;
-    height: 300px;
-    display: block;
-  
+#hyperlink{
+    text-decoration: none;
+}
+#hyperlink:visited{
+    color: inherit;
+}
+
+#hyperlink:hover{
+    color: black;
+}
+.text{
+    font-family: garamond;
 }
 
 footer{
-    color: silver;
+    color: grey;
     text-align: left;
-    margin-left: 20px;
-    margin-top: 10px;
+    background-color: var(--dark);
+    padding: 10px;
+    font-size: 80%;
 }
 
 footer:hover{
-    color: black;
-    
+    color: black;   
 }
+
+
+
+
+
+
