@@ -12,7 +12,7 @@ header {
     margin-left: 70px;
     background-color: var(--light);  
     padding-top: 100px;
-    font-family: garamond;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header:hover{
@@ -41,7 +41,7 @@ li {
     display:inline-block;
     margin: 10px; ;
     background-color: var(--dark);
-    font-family: garamond;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li a {
@@ -52,7 +52,7 @@ ul li a {
 
 h2 {
     color: black;
-    font-family: garamond;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
 }
 
@@ -65,53 +65,45 @@ h2:hover{
     flex-wrap: wrap;
 }
 
-.harbour,
-.brutalism {
+.images{
     flex: 1;
     display: block;
     padding: 50px; 
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-top: 100px;/* Optional: Add padding between images */
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 100px;
+    max-width: 100%; 
+    height: auto;
 }
 
-.harbour img,
-.brutalism img {
-    max-width: 100%; /* Ensure images don't exceed container width */
-    height: auto;
-    
+.images img:hover {
+    filter: opacity(0.5);
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        flex-direction: column; /* Change flex direction to column for stacking */
+        flex-direction: column; 
     }
 
-    .harbour,
-    .brutalism {
-        flex: none; /* Remove flex to make them stack */
-        width: 100%; /* Ensure each image takes full width */
+    .images {
+        flex: none; 
+        width: 100%;
     }
 }
 
 
-.about, .work {
-  
+.about, .work, .contact{
     color: grey;
     text-align: left;
     background-color: var(--dark);
     padding: 50px;
     margin-left: 50px;
-    
-    
-
 }
 
 
 .concrete img,
-.building img,
-.bondi img{
+.images img{
 
     width: 100%; 
     height: auto;
@@ -123,12 +115,10 @@ h2:hover{
     padding-bottom: 0px;
 }
 
-.bondi{
-    padding: 50px;
-}
 
 #hyperlink{
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #hyperlink:visited{
     color: inherit;
@@ -137,16 +127,18 @@ h2:hover{
 #hyperlink:hover{
     color: black;
 }
+
 .text{
-    font-family: garamond;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
     color: grey;
-    text-align: left;
+    text-align: center;
     background-color: var(--dark);
     padding: 10px;
     font-size: 80%;
+    margin-left: 40px;
 }
 
 footer:hover{
