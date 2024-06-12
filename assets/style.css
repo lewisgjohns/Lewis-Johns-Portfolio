@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
     --light: white;
 }
 
-
-header {
+header{
     color: black;
     text-align: left;
     margin-left: 70px;
@@ -19,6 +21,7 @@ header:hover{
     color: silver;
 }
 
+
 body {
     background-color: var(--light);
     overflow-x: hidden;
@@ -30,7 +33,7 @@ nav {
     background-color: var(--light);
     display: inline-block;
     list-style: none;
-    width: 100%;
+    
 }
 
 nav a:hover {
@@ -60,21 +63,30 @@ h2:hover{
     color: silver;
 }
 
+.about, .work, .contact{
+    color: grey;
+    text-align: left;
+    background-color: var(--dark);
+    padding: 50px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .images,
+    .avatar {
+        flex: none; 
+        width: 100%;
+    }
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-}
-
-.images{
-    flex: 1;
-    display: block;
-    padding: 50px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding-top: 100px;
-    max-width: 100%; 
-    height: auto;
 }
 
 .avatar img{
@@ -88,53 +100,21 @@ h2:hover{
     display: inline-block;
 }
 
-.projects1{
-    
-        flex: 1;
-        display: block;
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        margin-left: 150px;
-    
-}
-
-.projects2{
-    
+.images{
     flex: 1;
     display: block;
+    padding: 50px; 
     display: flex;
     justify-content: center; 
-    align-items: center;
-    margin-right: 150px;
+    align-items: center; 
+    padding-top: 100px;
+    max-width: 100%; 
+    height: auto;
 }
-
-.images img:hover {
+.images img:hover{
     filter: opacity(0.5);
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; 
-    }
-
-    .images {
-        flex: none; 
-        width: 100%;
-    }
-}
-
-
-.about, .work, .contact{
-    color: grey;
-    text-align: left;
-    background-color: var(--dark);
-    padding: 50px;
-    margin-left: 50px;
-}
-
-
-.concrete img,
 .images img{
 
     width: 100%; 
@@ -147,22 +127,21 @@ h2:hover{
     padding-bottom: 0px;
 }
 
-
-#hyperlink{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+.projects{
+        flex: 1;
+        display: block;
+        display: flex;
+        justify-content: center; 
+        align-items: center;  
 }
-#hyperlink:visited{
-    color: inherit;
-}
-
-#hyperlink:hover{
-    color: black;
+.projects img:hover{
+    filter: opacity(0.5);
 }
 
-.text{
-    font-family: Arial, Helvetica, sans-serif;
+#hyperlink img:hover{
+    filter: opacity(0.5);
 }
+
 
 footer{
     color: grey;
