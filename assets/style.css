@@ -78,7 +78,8 @@ h2:hover{
     }
 
     .images,
-    .avatar {
+    .avatar,
+    .projects {
         flex: none; 
         width: 100%;
     }
@@ -108,15 +109,13 @@ h2:hover{
     justify-content: center; 
     align-items: center; 
     padding-top: 100px;
-    max-width: 100%; 
-    height: auto;
 }
+
 .images img:hover{
     filter: opacity(0.5);
 }
 
 .images img{
-
     width: 100%; 
     height: auto;
     display: inline-block;
@@ -128,11 +127,20 @@ h2:hover{
 }
 
 .projects{
+    flex: 1;
+    display: block;
+    padding: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.projects img{
         flex: 1;
         display: block;
         display: flex;
-        justify-content: center; 
-        align-items: center;  
+       
+      
 }
 .projects img:hover{
     filter: opacity(0.5);
