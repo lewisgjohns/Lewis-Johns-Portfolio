@@ -77,6 +77,38 @@ h2:hover{
     height: auto;
 }
 
+.avatar img{
+    flex: 1;
+    display: block; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 150px;
+    width: 220px;
+    display: inline-block;
+}
+
+.projects1{
+    
+        flex: 1;
+        display: block;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-left: 150px;
+    
+}
+
+.projects2{
+    
+    flex: 1;
+    display: block;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 150px;
+}
+
 .images img:hover {
     filter: opacity(0.5);
 }
