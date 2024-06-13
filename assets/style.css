@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*this will be used for the background color */
 :root{
     --light: white;
 }
@@ -17,6 +18,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*All hovered elements color:silver except for Footer and Nav which are Black */
 header:hover{
     color: silver;
 }
@@ -63,6 +65,7 @@ h2:hover{
     color: silver;
 }
 
+/* Titles in each section */
 .about, .work, .contact{
     color: grey;
     text-align: left;
@@ -72,6 +75,7 @@ h2:hover{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Display for various devices */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column; 
@@ -101,6 +105,7 @@ h2:hover{
     display: inline-block;
 }
 
+/*First display images and About images */
 .images{
     flex: 1;
     display: block;
@@ -126,6 +131,7 @@ h2:hover{
     padding-bottom: 0px;
 }
 
+/*Images under Project section */
 .projects{
     flex: 1;
     display: block;
@@ -160,6 +166,7 @@ footer{
     margin-left: 40px;
 }
 
+/*Footer only section with Black hover*/
 footer:hover{
     color: black;   
 }
